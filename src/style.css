@@ -1,5 +1,101 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Arial", sans-serif;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+
+.card .top-icons {
+  font-size: 4rem;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.card .bottom-icons {
+  font-size: 4rem;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  transform: rotate(180deg);
+}
+
+.card .number {
+  font-size: 6rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.heart .top-icons,
+.heart .bottom-icons,
+.heart .number {
+  color: red;
+}
+
+.diamond .top-icons,
+.diamond .bottom-icons,
+.diamond .number {
+  color: red;
+}
+
+.spade .top-icons,
+.spade .bottom-icons,
+.spade .number {
+  color: black;
+}
+
+.club .top-icons,
+.club .bottom-icons,
+.club .number {
+  color: black;
+}
+
+button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background: white;
+  color: blue;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
